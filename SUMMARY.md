@@ -1,6 +1,6 @@
 
-* [从零开始学编程：Python入门](README.md)
-* [01](work/01.md)
+* [Python abc](README.md)
+* [01、安装和准备](work/01.md)
 * [02](work/02.md)
 * [03](work/03.md)
 * [04](work/04.md)
@@ -12,3 +12,4 @@
 * [10](work.10md)
 * [11](work/11.md)
 * [12](work/12.md)
+
