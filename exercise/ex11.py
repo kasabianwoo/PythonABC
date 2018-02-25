@@ -1,0 +1,21 @@
+# -*- coding:utf-8 -*-
+
+#print "how old are you?",
+#age = raw_input()
+#print "how tall are you?",
+#height = raw_input()
+#print "how much do you weight?"
+#weight = raw_input()
+
+#print "so, you`re %r old, %r tall and %r heavy." %(age, height, weight)
+
+
+
+print "how old are you?",
+age = input()
+print "how tall are you?",
+height = input()
+print "how much do you weight?"
+weight = input()
+
+print "so, you`re %r old, %r tall and %r heavy." %(age, height, weight)
