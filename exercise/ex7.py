@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 print "mary had a little lamb"
-print "its fleece was white as %s." % "snow"
+print "its fleece was white as %s." % 'snow'
 print "and everywhere that mary went"
 print "." * 10 # what`d that do?
 
