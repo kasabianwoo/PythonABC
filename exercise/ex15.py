@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 
+
+'''
 #argv 格式，从 sys 调用
 from sys import argv
 
@@ -27,5 +29,21 @@ print txt_again.read()
 
 txt.close()
 txt_again.close()
+'''
+
+
+
+filename = raw_input("filename:")
+
+txt = open(filename)
+
+print "here`s your file %r:" % filename
+print txt.read()
+
+print "type the filename again:"
+file_again = raw_input(">")
+txt_again = open(file_again)
+
+print txt_again.read()
 
 
