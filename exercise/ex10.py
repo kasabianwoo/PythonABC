@@ -41,6 +41,7 @@ b = 'I am 6\'2" tall'
 print "let`s talk about %s." % b
 print "let`s talk about %r." % b
 
+
 #a = "hhh" #"I am 6'2\" tall."
 #print = " %r ", % a
 #print = " %s ", % a

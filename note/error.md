@@ -60,3 +60,115 @@ Traceback (most recent call last):
 NameError: name 'snow' is not defined
 ```
 
+
+
+09、
+
+
+
+```
+  File "ex8.py", line 2
+    formatter = “%r %r %r %r”
+                ^
+SyntaxError: invalid syntax
+```
+
+修改为英文下的引号。
+
+
+```
+Traceback (most recent call last):
+  File "ex8.py", line 5, in <module>
+    print formatter % (one,two,three,four)
+NameError: name 'one' is not defined
+```
+
+修改： one、two、three four 加引号。格式化字符串引用文本时需带上引号（单引号和双引号均可）。
+
+
+
+```
+File "ex8.py", line 6, in <module>
+    print formatter % (ture,fause,ture,fause)
+NameError: name 'ture' is not defined
+```
+
+修改 ture 为 true ，修改 fause 为 false
+
+
+
+```
+1 2 3 4
+'one' 'two' 'three' 'four'
+True False True False
+Traceback (most recent call last):
+  File "ex8.py", line 8, in <module>
+    "i had this thing."
+TypeError: not enough arguments for format string
+```
+
+字符串的参数不足，9-11行添加“，”号，这里为4个字符串；
+
+
+```
+$ python ex8.py
+1 2 3 4
+'one' 'two' 'three' 'four'
+True False True False
+'i had this thing.' 'that you could type up right.' 'but it didn\xe2\x80\x98t sing.' 'so i said goodnight.'
+```
+
+\xe2\x80\x98, 使用单引号，而非“`”。 英文“don't”的省略形式中的符号为单引号！
+
+
+
+
+
+
+
+
+
+17、
+
+```
+$ python ex16.py test.txt
+we`re going to erase 'test.txt'.
+if you don`t want that,hit CTRL-C (^C)
+if you do want that, hit RETURMN
+?
+opening the file...
+truncating the file. goodbye!
+now i`m going to ask you for three lines.
+line1:1
+line2:2
+line3:3
+i`m going to write these to the file.
+Traceback (most recent call last):
+  File "ex16.py", line 31, in <module>
+    target.write(lin3)
+NameError: name 'lin3' is not defined
+```
+
+书写错误，lin3应该为 line3。（ 我检查了代码么？）
+
+
+```
+$ python ex16.py test.txt
+we`re going to erase 'test.txt'.
+if you don`t want that,hit CTRL-C (^C)
+if you do want that, hit RETURMN
+?
+opening the file...
+truncating the file. goodbye!
+now i`m going to ask you for three lines.
+line1:1
+line2:2
+line3:3
+i`m going to write these to the file.
+Traceback (most recent call last):
+  File "ex16.py", line 34, in <module>
+    print target.readline()
+IOError: File not open for reading
+```
+
+可能原因是文件已经在写入状态了`target = open(filename, 'w')`, 把其他代码注释掉，仅保留 readline() 代码，返回了文件的第一行内容：
