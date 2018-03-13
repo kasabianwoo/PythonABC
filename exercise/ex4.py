@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 #定义变量cars
 cars = 100
 #定义变量space_in_car
@@ -32,4 +33,4 @@ print "we need to put about", average_passengers_per_car,"in each car"
 
 
 #字符串拼接
-#print "Hey %s there." % "you".
+#print "Hey %s there." % "you"
