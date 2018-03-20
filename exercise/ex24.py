@@ -1,6 +1,70 @@
+# -*- coding:utf-8 -*-
 
-from urllib import urlopen
-my_url = "https://www.douban.com/"
-urldoc = urlopen(my_url)
-print urldoc.read()
+'''
+
+print "let's practice everything."
+print 'you\'d need to kown\' but escapes with \\ that do \n newlines and \t tabs.'
+
+poem = """
+\tThe lovely world 
+with logic so firmly planted
+cannot discern \n the needs of needs of love
+nor comprehend passion from intuition
+and requires an explanation
+\n\t\twhere the is none
+"""
+
+print "----------"
+print poem
+print "----------"
+
+five = 10-2+3-6
+print "this should be five: %s" % five
+
+
+def secret_formula(started):
+	jelly_beans = started * 500
+	jars = jelly_beans / 1000
+	crates = jars / 100
+	return jelly_beans,jars,crates
+
+start_point = 10000
+beans,jars,crates = secret_formula(start_point)
+
+print "with a starting point of: %d" % start_point
+print "we`d have %d beans, %d jars,and %d crates." % (beans,jars,crates)
+
+start_point = start_point / 10
+
+print "we can also do that this way:"
+print "we'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
+
+
+'''
+
+
+'''
+def test(started):
+	a = started * 1
+	b = started * 2
+	c = started * 3 
+	return a,b,c
+
+num = 1
+e,f,g = test(num)
+
+print "we'd have %d beans, %d jars, and %d crates." % test(num)
+
+'''
+
+def test(started):
+	a = 1
+	b = 2
+	c = 3 
+	return a,b,c
+
+num = 1
+e,f,g = test(num)
+
+print "we'd have %d beans, %d jars, and %d crates." % test(num)
 
