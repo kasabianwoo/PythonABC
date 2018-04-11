@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 
 from sys import exit
 
@@ -5,7 +6,7 @@ def gold_room():
 	print "this room is full of gold. how much do you take?"
 
 	choice = raw_input(">")
-	if "0" in choice or "1" in choice:
+	if "0" in choice or "1" in choice:    # 算个是个错误
 		how_much = int(choice)
 	else:
 		dead("man,learn to type a number.")
@@ -22,14 +23,14 @@ def bear_room():
 	print "the bear has a bunch of honey"
 	print "the fat bear is in front of another door"
 	print "how are you going to move the bear?"
-	bear_moved = False
+	bear_moved = False    # 如何定义的？
 
 	while True:
 		choice = raw_input(">")
 
 		if choice == "take honey":
 			dead("the bear looks at you then slaps your face off")
-		elif choice == "taunt bear" and not bear_moved:
+		elif choice == "taunt bear" and not bear_moved:   # 这个判断如何理解？ Ture 才执行？
 			print "the bear has moved from the door. you can go throght it now"
 			bear_moved = True
 		elif choice == "taunt bear" and bear_moved:
