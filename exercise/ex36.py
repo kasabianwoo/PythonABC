@@ -17,16 +17,16 @@ def street_47th():
 
 def jungle():
 	print "now you are in jungle"
-	print "your enemy is vice, who is the dinosaurs hunter ,and a knife in you hand"
+	print "your enemy is Vice, who is the dinosaurs hunter ,and a knife in you hand"
 	print "How are you going to througt?"
 
 	hoice = raw_input(">")
 
 	if "knife" in choice:
-		print "you kill the hunter, he dead "
+		print "you killed the dinosaurs hunter, he dead "
 		success()
 	else:
-		dead("the butcher will skin you")
+		dead("the dinosaurs hunter put an end to your little adventure")
 
 
 def desert():
@@ -40,7 +40,7 @@ def desert():
 		print "take the car,it would be safe"
 		success()
 	else:
-		dead("you Trapped in the desert")
+		dead("you were trapped in the desert")
 
 
 
