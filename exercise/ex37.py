@@ -34,6 +34,7 @@ def print_docs():							# Function to print the daily checks automatically
   # The command below passes the command line string to open word, open the document, print it then close word down
   subprocess.Popen(["C:\\Program Files (x86)\Microsoft Office\Office14\winword.exe", "P:\\\\Documentation\\Daily Docs\\Back office Daily Checks.doc", "/mFilePrintDefault", "/mFileExit"]).communicate()
 
+#subprocess.Popen().communicate()
 
 def putty_sessions(conffilename):						# Function to load the putty sessions I need
   for server in open(conffilename):			# Open the file server_list.txt, loop through reading each line - 1.1 -Changed - 1.3 Changed name to use variable conffilename
